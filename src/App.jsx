@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, Navbar, Layout } from "./components";
+import { Hero, Navbar, Layout, Skills, HeroShape } from "./components";
 
 import "./css/animations.css";
 import "./css/main.css";
@@ -11,6 +11,8 @@ const App = () => {
       <Navbar />
       <Layout>
         <Hero />
+        <HeroShape />
+        <Skills />
       </Layout>
     </div>
   );

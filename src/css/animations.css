@@ -10,21 +10,25 @@
   }
 }
 
-@keyframes moving-border {
+@keyframes squezee {
   0% {
-    border: 4px solid white;
-  }
-  25% {
-    border-top: 4px solid black;
-    transition: all;
+    transform: scaleX(1);
   }
   50% {
-    border-right: 4px solid black;
-  }
-  75% {
-    border-bottom: 4px solid black;
+    transform: scaleX(1.1);
   }
   100% {
-    border-left: 4px solid black;
+    transform: scaleX(1);
+  }
+}
+@keyframes squezee-buttons {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
