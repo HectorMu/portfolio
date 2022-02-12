@@ -104,15 +104,19 @@ body {
 
 .hero-items img {
   height: 100%;
-  width: 50%;
-  border-radius: 50%;
+  width: 70%;
+  border-radius: 5% 50%;
+  border: 4px solid white;
+
+  animation: 2s ease-in-out infinite moving-border;
 }
 
 .about h5 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 55px;
-  font-weight: 600;
+  font-weight: 800;
+  text-shadow: white 2px 5px;
 }
 .about p {
   text-align: justify;
@@ -129,6 +133,7 @@ body {
 .social-media a:hover {
   transform: translateY(-10px);
   color: rgb(255, 255, 255);
+  text-shadow: gray 2px 5px;
 }
 
 .btn-github {
@@ -143,4 +148,24 @@ body {
   color: rgb(78, 154, 241);
   background-color: transparent;
   transition: all ease 0.2s;
+}
+
+.hero-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-footer h2 {
+  text-shadow: white 2px 2px;
+  font-weight: bolder;
+  animation: 1s ease-out 0s infinite bubbing-up-down;
+}
+
+.hero-footer button {
+  border: none;
+  color: white;
+  background-color: transparent;
+  text-shadow: black 2px 2px;
+  animation: 1s ease-out 0s infinite bubbing-up-down;
 }
