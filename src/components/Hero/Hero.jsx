@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import me from "../assets/mifoto.jfif";
+import me from "../../assets/mifoto.jfif";
 import "./hero.css";
 const Hero = () => {
   const [old, setOld] = useState(0);
@@ -23,10 +23,10 @@ const Hero = () => {
             </p>
             <div className="social-media">
               <a href="#" className="btn-github">
-                <i class="fab fa-github fa-3x"></i>
+                <i className="fab fa-github fa-3x"></i>
               </a>
               <a href="#" className="btn-linkedin">
-                <i class="fab fa-linkedin fa-3x"></i>
+                <i className="fab fa-linkedin fa-3x"></i>
               </a>
             </div>
           </div>

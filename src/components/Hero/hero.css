@@ -1,3 +1,78 @@
+.hero-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.hero-items img {
+  height: 100%;
+  width: 70%;
+  border-radius: 5% 50%;
+  border: 4px solid white;
+}
+
+.about h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.about p {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 800;
+  text-shadow: white 1px 2px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.social-media a:hover {
+  animation: 0.8s ease-in infinite squezee-buttons;
+  color: rgb(255, 255, 255);
+  text-shadow: gray 2px 5px;
+}
+
+.btn-github {
+  border: none;
+  color: black;
+  background-color: transparent;
+  transition: all ease 0.2s;
+}
+
+.btn-linkedin {
+  border: none;
+  color: rgb(78, 154, 241);
+  background-color: transparent;
+  transition: all ease 0.2s;
+}
+
+.hero-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-footer h2 {
+  text-shadow: white 2px 2px;
+  font-weight: bolder;
+  animation: 1s ease-out 0s infinite bubbing-up-down;
+}
+
+.hero-footer button {
+  border: none;
+  color: white;
+  background-color: transparent;
+  text-shadow: black 2px 2px;
+  animation: 1s ease-out 0s infinite bubbing-up-down;
+}
+
 .gradient-blue {
   background: rgb(188, 187, 189);
   background: linear-gradient(
@@ -6,4 +81,28 @@
     rgba(168, 168, 168, 1) 6%,
     rgba(217, 225, 227, 1) 100%
   );
+}
+@media (max-width: 768px) {
+  .hero-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .about h5 {
+    display: none;
+  }
+  .hero-items img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .hero-footer h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .about p {
+    text-align: center;
+  }
 }

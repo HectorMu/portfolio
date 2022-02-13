@@ -25,7 +25,7 @@ const Skills = () => {
               veritatis aperiam eos reprehenderit provident.
             </div>
           </div>
-          <div className="skill-card">
+          <div className="skill-card shadowed">
             <img
               src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
               className="image"

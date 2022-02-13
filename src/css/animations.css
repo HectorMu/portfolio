@@ -1,12 +1,12 @@
 @keyframes bubbing-up-down {
   0% {
-    transform: translateY(-10px);
-  }
-  50% {
     transform: translateY(0px);
   }
-  100% {
+  50% {
     transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
@@ -23,12 +23,49 @@
 }
 @keyframes squezee-buttons {
   0% {
-    transform: scale(1);
+    transform: translateY(0px) scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: translateY(-10px) scale(1.1);
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes right-to-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translateX(-5%);
+    opacity: 0.3;
+  }
+  40% {
+    transform: translateX(10%);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(15%);
+    opacity: 0.5;
+  }
+  60% {
+    transform: translateX(5%);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translateX(10%);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translateX(15%);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }

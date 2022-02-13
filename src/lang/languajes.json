@@ -1,0 +1,12 @@
+{
+  "es": {
+    "navbar": {
+      "link1": "Sobre mi"
+    }
+  },
+  "en": {
+    "navbar": {
+      "link1": "About me"
+    }
+  }
+}
