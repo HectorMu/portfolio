@@ -1,7 +1,13 @@
 import React from "react";
+import useSidebarControl from "../../hooks/useSidebarControl";
 
 import "./navbar.css";
 const Navbar = () => {
+  const { setIsActive, isActive } = useSidebarControl();
+
+  const toggleSidebarHandler = () => {
+    setIsActive(!isActive);
+  };
   return (
     <nav className="navbar">
       <div className="brand">
@@ -18,6 +24,9 @@ const Navbar = () => {
           Contact
         </a>
         <button className="theme-chooser">
+          <i className="fas fa-sun fa-2x"></i>
+        </button>
+        <button onClick={toggleSidebarHandler} className="nav-link">
           <i className="fas fa-sun fa-2x"></i>
         </button>
       </ul>
