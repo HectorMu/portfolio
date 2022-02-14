@@ -1,16 +1,18 @@
 .sidebar {
+  flex-basis: 200px;
+  flex-shrink: 0;
+  transform: translateX(0);
   transition: transform 0.2s ease-in-out;
   width: 200px;
-  transform: translateX(-200px);
   background: rgb(188, 187, 189);
   z-index: 100;
   border-right: 2px solid white;
+
   padding: 10px;
 }
 
 .sidebar.active {
-  transform: translateX(0px);
-  transition: trasform 0.2s ease-in-out;
+  transform: translateX(-300px);
 }
 
 .sidebar-links {
