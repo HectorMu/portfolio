@@ -6,7 +6,7 @@ import "./Sidebar.css";
 const Sidebar = () => {
   const { isActive } = useSidebarControl();
   return (
-    <nav className={`sidebar  ${isActive ? `active` : ``} `}>
+    <nav className={`sidebar ${isActive ? `active` : ``} `}>
       <div className="sidebar-links">
         <a className="link" href="#">
           About me
