@@ -1,11 +1,11 @@
 {
   "es": {
-    "navbar": {
+    "sidebar": {
       "link1": "Sobre mi"
     }
   },
   "en": {
-    "navbar": {
+    "sidebar": {
       "link1": "About me"
     }
   }

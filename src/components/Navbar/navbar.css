@@ -52,3 +52,13 @@
   transform: rotate(180deg);
   transition: all 0.5s ease-in;
 }
+.toggle-sidebar {
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.toggle-sidebar:focus {
+  border-radius: 3px solid rgb(12, 12, 12);
+}

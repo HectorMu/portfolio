@@ -14,20 +14,11 @@ const Navbar = () => {
         <a href="#">Hm</a>
       </div>
       <ul className="nav-items">
-        <a className="nav-link" href="#">
-          About me
-        </a>
-        <a className="nav-link" href="#">
-          My projects
-        </a>
-        <a className="nav-link" href="#">
-          Contact
-        </a>
         <button className="theme-chooser">
           <i className="fas fa-sun fa-2x"></i>
         </button>
-        <button onClick={toggleSidebarHandler} className="nav-link">
-          <i className="fas fa-sun fa-2x"></i>
+        <button onClick={toggleSidebarHandler} className={`toggle-sidebar`}>
+          <i className="fas fa-bars "></i>
         </button>
       </ul>
     </nav>

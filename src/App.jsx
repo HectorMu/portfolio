@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Hero, Navbar, Layout, Skills, HeroShape, Sidebar } from "./components";
-//import languages from "./lang/languajes.json";
 
 import "./css/animations.css";
 import "./css/main.css";
@@ -14,7 +13,6 @@ const App = () => {
   return (
     <div>
       <Navbar />
-
       <div className={`wrapper ${isActive ? `active` : ``}`}>
         <Sidebar />
         <Layout>
