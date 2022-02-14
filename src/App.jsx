@@ -1,6 +1,14 @@
 import React from "react";
 
-import { Hero, Navbar, Layout, Skills, HeroShape, Sidebar } from "./components";
+import {
+  Hero,
+  Navbar,
+  Layout,
+  Skills,
+  HeroShape,
+  Sidebar,
+  Projects,
+} from "./components";
 
 import "./css/animations.css";
 import "./css/main.css";

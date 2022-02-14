@@ -1,29 +1,35 @@
+.hero {
+  margin-top: 80px;
+  height: 100vh;
+}
+
 .hero-items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .hero-items img {
   height: 100%;
   width: 70%;
-  border-radius: 5% 50%;
-  border: 4px solid white;
+  border-radius: 50%;
 }
 
 .about h5 {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 10px;
   font-weight: bolder;
-  text-decoration: underline;
+  text-align: end;
 }
 
 .about p {
-  text-align: left;
+  text-align: justify;
   margin-bottom: 30px;
   font-size: 30px;
-  font-weight: 800;
-  text-shadow: white 1px 2px;
+  font-weight: bolder;
+  text-shadow: white -1px -2px;
 }
 
 .social-media {
@@ -83,6 +89,10 @@
   );
 }
 @media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+    padding-bottom: 200px;
+  }
   .hero-items {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

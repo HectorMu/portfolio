@@ -4,3 +4,4 @@ export { default as Layout } from "./Layout/Layout";
 export { default as Skills } from "./Skills/Skills";
 export { default as HeroShape } from "./Shapes/HeroShape";
 export { default as Sidebar } from "./Sidebar/Sidebar";
+export { default as Projects } from "./Projects/Projects";
