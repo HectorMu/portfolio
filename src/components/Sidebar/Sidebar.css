@@ -8,7 +8,7 @@
   z-index: 100;
   border-right: 2px solid white;
 
-  padding: 10px;
+  padding: 20px;
 }
 
 .sidebar.active {
@@ -19,7 +19,7 @@
   height: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   gap: 20px;
   position: sticky;
@@ -34,10 +34,7 @@
   color: white;
 }
 
-@media (max-width: 992px) {
-  .sidebar-links {
-    height: 50vh;
-  }
+@media (min-width: 1112px) {
   .sidebar {
     transform: translateX(-300px);
   }
