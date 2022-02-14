@@ -1,17 +1,18 @@
 .sidebar {
-  transform: translateX(-100%);
+  flex-basis: 200px;
+  flex-shrink: 0;
+  transform: translateX(0);
   transition: transform 0.2s ease-in-out;
   width: 200px;
   background: rgb(188, 187, 189);
   z-index: 100;
   border-right: 2px solid white;
-  height: 100%;
+
   padding: 10px;
 }
 
 .sidebar.active {
-  transform: translateX(0%);
-  transition: transform 0.2s ease-in-out;
+  transform: translateX(-300px);
 }
 
 .sidebar-links {
@@ -44,5 +45,15 @@
   .sidebar.active {
     transform: translateX(-100%);
     transition: transform 0.2s ease-in-out;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    transform: translateX(-300px);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
   }
 }

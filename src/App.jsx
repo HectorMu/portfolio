@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <div className={`wrapper ${isActive ? `active` : ``}`}>
+      <div className={`wrapper`}>
         <Sidebar />
         <Layout>
           <Hero />
