@@ -1,6 +1,6 @@
 .hero {
   margin-top: 80px;
-  height: 100vh;
+  height: 60vh;
 }
 
 .hero-items {
@@ -9,6 +9,8 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hero-items img {
@@ -88,10 +90,39 @@
     rgba(217, 225, 227, 1) 100%
   );
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
   .hero {
     height: 100vh;
     padding-bottom: 200px;
+  }
+  .hero-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .about h5 {
+    display: none;
+  }
+  .hero-items img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .hero-footer h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .about p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: 100px;
   }
   .hero-items {
     display: grid;
@@ -114,5 +145,11 @@
 
   .about p {
     text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .hero {
+    padding-bottom: 300px;
   }
 }

@@ -6,22 +6,26 @@ import "./Sidebar.css";
 const Sidebar = () => {
   const { isActive } = useSidebarControl();
   return (
-    <nav className={`sidebar ${isActive ? `active` : ``} `}>
-      <div className="sidebar-links">
-        <a className="link" href="#">
+    <aside className={`sidebar ${isActive ? `active` : ``} `}>
+      <h3>Menu</h3>
+      <nav className="menu">
+        <a href="#" className="menu-item">
+          Home
+        </a>
+        <a href="#" className="menu-item">
           About me
         </a>
-        <a className="link" href="#skills">
+        <a href="#" className="menu-item">
+          Projects
+        </a>
+        <a href="#" className="menu-item">
           Skills
         </a>
-        <a className="link" href="#">
-          My projects
-        </a>
-        <a className="link" href="#">
+        <a href="#" className="menu-item">
           Experience
         </a>
-      </div>
-    </nav>
+      </nav>
+    </aside>
   );
 };
 

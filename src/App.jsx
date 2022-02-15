@@ -11,7 +11,6 @@ import {
 } from "./components";
 
 import "./css/animations.css";
-import "./css/main.css";
 import "./css/utilities.css";
 import "./App.css";
 import useSidebarControl from "./hooks/useSidebarControl";
