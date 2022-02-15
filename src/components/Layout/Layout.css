@@ -15,12 +15,3 @@
     transition: margin 0.2s ease-in-out;
   }
 }
-
-@media (min-width: 1112px) {
-  .layout {
-    margin-left: -300px;
-  }
-  .layout.active {
-    margin-left: 0px;
-  }
-}

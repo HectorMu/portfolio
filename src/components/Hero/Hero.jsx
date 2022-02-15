@@ -16,7 +16,6 @@ const Hero = () => {
             <img src={me} alt="me" />
           </div>
           <div className="about">
-            <h5>Who i am?</h5>
             <p>
               Hi, I'm Hector Muñoz a {old} years old web developer that loves to
               learn new techonologies and take projects to the next level.
