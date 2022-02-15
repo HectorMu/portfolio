@@ -20,6 +20,7 @@ section {
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -64,4 +65,10 @@ body {
 .wrapper {
   display: flex;
   min-height: 100vh;
+}
+
+@media (max-width: 576px) {
+  html {
+    scroll-padding-top: 130px;
+  }
 }

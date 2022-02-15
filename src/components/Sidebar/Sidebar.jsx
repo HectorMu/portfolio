@@ -12,15 +12,13 @@ const Sidebar = () => {
         <a href="#" className="menu-item">
           Home
         </a>
-        <a href="#" className="menu-item">
-          About me
-        </a>
-        <a href="#" className="menu-item">
-          Projects
-        </a>
-        <a href="#" className="menu-item">
+        <a href="#skills" className={`menu-item`}>
           Skills
         </a>
+        <a href="#projects" className="menu-item">
+          Projects
+        </a>
+
         <a href="#" className="menu-item">
           Experience
         </a>

@@ -9,14 +9,45 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .hero-items img {
   height: 100%;
   width: 70%;
   border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.image {
+  position: relative;
+}
+.back-circle {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 310px;
+  height: 310px;
+  background-color: white;
+  border-radius: 20%;
+  transform: rotate(45deg);
+  animation: rotate-infinite 10s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes rotate-infinite {
+  0% {
+    transform: rotate(360deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0.8);
+  }
 }
 
 .about h5 {
@@ -117,6 +148,7 @@
 
   .about p {
     text-align: center;
+    font-size: 25px;
   }
 }
 
@@ -136,7 +168,7 @@
   }
   .hero-items img {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
   .hero-footer h2 {
     font-size: 30px;
@@ -151,5 +183,8 @@
 @media (min-width: 576px) {
   .hero {
     padding-bottom: 300px;
+  }
+  .hero-items img {
+    margin-bottom: 60px;
   }
 }
