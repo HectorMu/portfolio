@@ -1,17 +1,3 @@
-.layout {
-  position: relative;
-  min-width: 0;
-  flex-grow: 1;
-  margin-left: -300px;
-}
-
-.layout.active {
-  margin-left: -300px;
-}
-
-@media (min-width: 992px) {
-  .layout {
-    margin-left: 0;
-    transition: margin 0.2s ease-in-out;
-  }
+.content {
+  flex: 1 1 0;
 }
