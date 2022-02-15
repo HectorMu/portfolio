@@ -20,9 +20,11 @@ const Skills = () => {
           </div>
 
           <div className="body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique,
-            laudantium. Blanditiis velit, sapiente eaque rem veritatis aperiam
-            eos reprehenderit provident.
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique, laudantium. Blanditiis velit, sapiente eaque rem
+              veritatis aperiam eos reprehenderit provident.
+            </p>
           </div>
         </div>
         <div className="skill-card shadowed">
@@ -36,9 +38,11 @@ const Skills = () => {
           </div>
 
           <div className="body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique,
-            laudantium. Blanditiis velit, sapiente eaque rem veritatis aperiam
-            eos reprehenderit provident.
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique, laudantium. Blanditiis velit, sapiente eaque rem
+              veritatis aperiam eos reprehenderit provident.
+            </p>
           </div>
         </div>
         <div className="skill-card shadowed">
@@ -52,9 +56,11 @@ const Skills = () => {
           </div>
 
           <div className="body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique,
-            laudantium. Blanditiis velit, sapiente eaque rem veritatis aperiam
-            eos reprehenderit provident.
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique, laudantium. Blanditiis velit, sapiente eaque rem
+              veritatis aperiam eos reprehenderit provident.
+            </p>
           </div>
         </div>
         <div className="skill-card shadowed">
@@ -68,9 +74,11 @@ const Skills = () => {
           </div>
 
           <div className="body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique,
-            laudantium. Blanditiis velit, sapiente eaque rem veritatis aperiam
-            eos reprehenderit provident.
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique, laudantium. Blanditiis velit, sapiente eaque rem
+              veritatis aperiam eos reprehenderit provident.
+            </p>
           </div>
         </div>
       </div>

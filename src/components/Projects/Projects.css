@@ -31,12 +31,12 @@
 }
 .project-card > .title {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   font-size: 17px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(180, 179, 179, 0.933);
+
+  margin-left: 10px;
+  padding-top: 10px;
+  transition: all ease-in-out 0.2s;
 }
 .project-card > .title h5 {
   background-color: rgb(201, 198, 198);
@@ -44,65 +44,78 @@
   padding: 5px 15px;
 }
 
-.project-card > .title.css h5 {
-  background-color: rgb(60, 125, 223);
-  font-weight: bolder;
-  color: white;
-  border-radius: 20px;
-  padding: 5px 15px;
-}
-
-.project-card > .title.js h5 {
-  background-color: rgb(230, 207, 7);
-  font-weight: bolder;
-  color: rgb(0, 0, 0);
-  border-radius: 20px;
-  padding: 5px 15px;
-}
-
-.project-card > .title.html h5 {
-  background-color: rgb(238, 159, 12);
-  font-weight: bolder;
-  color: rgb(0, 0, 0);
-  border-radius: 20px;
-  padding: 5px 15px;
-}
-
-.project-card > .title.nodejs h5 {
-  background-color: rgb(64, 172, 14);
-  font-weight: bolder;
-  color: rgb(255, 255, 255);
-  border-radius: 20px;
-  padding: 5px 15px;
-}
 .project-card > .body {
   text-align: center;
   padding: 0px 20px 20px 20px;
 }
 
-.project-card > .image {
-  object-fit: contain;
+.project-card > .body p {
+  margin-top: 10px;
+  display: none;
+}
 
-  padding-top: 15px;
-  height: 180px;
-  width: 100%;
+.project-card > .image {
+  object-fit: cover;
+  height: 15vw;
+  display: block;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
+  transition: all ease-in-out 0.2s;
+}
+
+.project-card:hover > .image {
+  transform: scale(0.9);
+}
+
+.project-card:hover > .title {
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 @media (max-width: 1200px) {
+  .projects {
+    margin-top: 140px;
+  }
   .projects-cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
+  .projects {
+    margin-top: 140px;
+  }
   .projects-cards {
     grid-template-columns: repeat(2, 1fr);
   }
+  .project-card > .image {
+    height: 50vw;
+  }
 }
-@media (max-width: 769px) {
+
+@media (max-width: 996px) {
+  .projects-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-card > .image {
+    height: 40vw;
+  }
+}
+@media (max-width: 768px) {
+  .projects-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-card > .image {
+    height: 50vw;
+  }
+}
+
+@media (max-width: 576px) {
   .projects-cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-card > .image {
+    height: 60vw;
   }
 }

@@ -13,9 +13,34 @@
   margin-top: 80px;
 }
 
-@media (max-width: 992px) {
+.sidebar .menu {
+  margin: 0 -1rem;
+  position: sticky;
+  top: 80px;
+}
+
+.sidebar .menu .menu-item {
+  display: block;
+  padding: 1em;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+.sidebar .menu .menu-item:hover,
+.sidebar .menu .menu-item.active {
+  color: #3bba9c;
+  border-right: 5px solid #3bba9c;
+}
+
+@media (min-width: 1200px) {
   .sidebar {
-    max-width: 200px;
+    max-width: 150px;
+  }
+}
+@media (max-width: 1024px) {
+  .sidebar {
+    max-width: 100px;
   }
 }
 

@@ -12,8 +12,7 @@ const Hero = () => {
     <section id="home" className="hero gradient-blue pt-2">
       <div className="container">
         <div className="hero-items py-1">
-          <div className="image">
-            <div className="back-circle"></div>
+          <div>
             <img src={me} alt="me" />
           </div>
           <div className="about">

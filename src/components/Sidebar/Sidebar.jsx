@@ -4,22 +4,38 @@ import useSidebarControl from "../../hooks/useSidebarControl";
 import "./Sidebar.css";
 
 const Sidebar = () => {
-  const { isActive } = useSidebarControl();
+  const { isActive, setIsActive } = useSidebarControl();
   return (
     <aside className={`sidebar ${isActive ? `active` : ``} `}>
       <h3>Menu</h3>
       <nav className="menu">
-        <a href="#" className="menu-item">
+        <a
+          href="#"
+          onClick={() => setIsActive(!isActive)}
+          className="menu-item"
+        >
           Home
         </a>
-        <a href="#skills" className={`menu-item`}>
+        <a
+          href="#skills"
+          onClick={() => setIsActive(!isActive)}
+          className={`menu-item`}
+        >
           Skills
         </a>
-        <a href="#projects" className="menu-item">
+        <a
+          href="#projects"
+          onClick={() => setIsActive(!isActive)}
+          className="menu-item"
+        >
           Projects
         </a>
 
-        <a href="#" className="menu-item">
+        <a
+          href="#"
+          onClick={() => setIsActive(!isActive)}
+          className="menu-item"
+        >
           Experience
         </a>
       </nav>
