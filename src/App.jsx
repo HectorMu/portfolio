@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
-import Aos from "aos";
+import AOS from "aos";
+
+import LangContextProvider from "./context/LangContextProvider";
+
+import "./css/animations.css";
+import "./css/utilities.css";
+import "./App.css";
 
 import {
   Hero,
@@ -16,14 +22,7 @@ import {
   Footer,
 } from "./components";
 
-import "./css/animations.css";
-import "./css/utilities.css";
-import "./App.css";
-import useSidebarControl from "./hooks/useSidebarControl";
-import LangContextProvider from "./context/LangContextProvider";
-
 const App = () => {
-  const { isActive } = useSidebarControl();
   return (
     <div>
       <LangContextProvider>

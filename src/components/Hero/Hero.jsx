@@ -5,7 +5,11 @@ import "./hero.css";
 const Hero = () => {
   const { currentLangObj } = useLanguage();
   return (
-    <section id="home" className="hero gradient-blue pt-2">
+    <section
+      data-aos="fade-up-left"
+      id="home"
+      className="hero gradient-blue pt-2"
+    >
       <div className="container">
         <div className="hero-items py-1">
           <div>
