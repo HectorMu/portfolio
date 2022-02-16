@@ -11,6 +11,8 @@ import {
   ProjectsShapeTop,
   ProjectsShapeBottom,
   Contact,
+  FooterShapetTop,
+  Footer,
 } from "./components";
 
 import "./css/animations.css";
@@ -35,6 +37,8 @@ const App = () => {
             <Projects />
             <ProjectsShapeBottom />
             <Contact />
+            <FooterShapetTop />
+            <Footer />
           </Layout>
         </div>
       </LangContextProvider>

@@ -8,7 +8,6 @@ const Sidebar = () => {
   const { isActive, setIsActive } = useSidebarControl();
   const { currentLangObj } = useLanguage();
 
-  console.log(currentLangObj);
   return (
     <aside className={`sidebar ${isActive ? `active` : ``} `}>
       <h3>Menu</h3>
