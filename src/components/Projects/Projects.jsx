@@ -1,15 +1,24 @@
 import React from "react";
 import useLanguage from "../../hooks/useLanguage";
+import useServiceFetch from "../../hooks/useServiceFetch";
+import { getProjects } from "../../services/projects";
+import Card from "./Card";
 import "./Projects.css";
 
 const Projects = () => {
   const { currentLangObj } = useLanguage();
+  const { hookData, isLoading } = useServiceFetch(getProjects);
+
+  console.log(hookData);
   return (
     <div id="projects" className="projects bg-gray-light">
       <div className="projects-header mt-1">
         <h1>{currentLangObj.projects.header}</h1>
       </div>
       <div className="projects-cards">
+        {hookData.map((project) => (
+          <Card project={project} />
+        ))}
         <div className="project-card shadowed">
           <img
             src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"

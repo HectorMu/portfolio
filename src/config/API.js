@@ -1,1 +1,3 @@
-export default baseUrl = "http://localhost:4000/";
+const baseUrl = "http://localhost:4000/api/";
+
+export default baseUrl;

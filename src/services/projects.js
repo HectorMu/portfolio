@@ -2,6 +2,8 @@ import API from "../config/API";
 
 export const getProjects = async () => {
   try {
+    const projects = await fetch(`${API}projects/listall`);
+    return await projects.json();
   } catch (error) {
     console.log(error);
   }
