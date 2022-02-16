@@ -1,11 +1,13 @@
 import React from "react";
+import useLanguage from "../../hooks/useLanguage";
 import "./skills.css";
 
 const Skills = () => {
+  const { currentLangObj } = useLanguage();
   return (
     <div id="skills" className="skills">
       <div className="skills-header mt-1">
-        <h1>My skills</h1>
+        <h1>{currentLangObj.skills.header}</h1>
       </div>
 
       <div className="skills-cards">

@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 80px;
 }
 
 .projects-header h1 {
@@ -22,12 +23,14 @@
   gap: 20px;
   padding-left: 15px;
   padding-right: 15px;
+  z-index: 2;
 }
 
 .project-card {
   object-fit: cover;
   border: 1px solid rgba(180, 179, 179, 0.933);
   border-radius: 20px;
+  background-color: white;
 }
 .project-card > .title {
   display: flex;
@@ -42,6 +45,7 @@
   background-color: rgb(201, 198, 198);
   border-radius: 20px;
   padding: 5px 15px;
+  margin-left: 10px;
 }
 
 .project-card > .body {
@@ -64,12 +68,50 @@
 }
 
 .project-card:hover > .image {
-  transform: scale(0.9);
+  transform: scale(0.92);
 }
 
-.project-card:hover > .title {
-  margin-top: 0px;
-  padding-top: 0px;
+.card-links {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.card-links a {
+  padding: 10px 15px;
+  width: 50%;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+}
+
+.card-links > .repository {
+  background-color: black;
+}
+
+.card-links > .website {
+  background-color: rgb(71, 71, 71);
+}
+
+.card-links > .website:hover {
+  background-color: rgb(117, 117, 117);
+}
+
+.card-links > .website:hover i {
+  animation: 0.7s infinite bumping-right ease-in-out;
+}
+
+@keyframes bumping-right {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 @media (max-width: 1200px) {

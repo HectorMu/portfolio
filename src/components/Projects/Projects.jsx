@@ -1,11 +1,13 @@
 import React from "react";
+import useLanguage from "../../hooks/useLanguage";
 import "./Projects.css";
 
 const Projects = () => {
+  const { currentLangObj } = useLanguage();
   return (
-    <div id="projects" className="projects">
+    <div id="projects" className="projects bg-gray-light">
       <div className="projects-header mt-1">
-        <h1>Projects</h1>
+        <h1>{currentLangObj.projects.header}</h1>
       </div>
       <div className="projects-cards">
         <div className="project-card shadowed">
@@ -18,7 +20,16 @@ const Projects = () => {
             <h5>Project #1</h5>
           </div>
 
-          <div className="body"></div>
+          <div className="body">
+            <div className="card-links">
+              <a className="repository" href="repository">
+                Code <i className="fab fa-github"></i>
+              </a>
+              <a className="website" href="webiste">
+                Site <i className="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
         <div className="project-card shadowed">
           <img
@@ -30,7 +41,16 @@ const Projects = () => {
             <h5>Project #2</h5>
           </div>
 
-          <div className="body"></div>
+          <div className="body">
+            <div className="card-links">
+              <a className="repository" href="repository">
+                Code <i className="fab fa-github"></i>
+              </a>
+              <a className="website" href="webiste">
+                Site <i className="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
         <div className="project-card shadowed">
           <img
@@ -43,10 +63,14 @@ const Projects = () => {
           </div>
 
           <div className="body">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
-              pariatur?
-            </p>
+            <div className="card-links">
+              <a className="repository" href="repository">
+                Code <i className="fab fa-github"></i>
+              </a>
+              <a className="website" href="webiste">
+                Site <i className="fas fa-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div className="project-card shadowed">
@@ -59,7 +83,16 @@ const Projects = () => {
             <h5>Project #4</h5>
           </div>
 
-          <div className="body"></div>
+          <div className="body">
+            <div className="card-links">
+              <a className="repository" href="repository">
+                Code <i className="fab fa-github"></i>
+              </a>
+              <a className="website" href="webiste">
+                Site <i className="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

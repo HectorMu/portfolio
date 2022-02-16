@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import me from "../../assets/mifoto.jfif";
+import useLanguage from "../../hooks/useLanguage";
 import "./hero.css";
 const Hero = () => {
-  const [old, setOld] = useState(0);
-
-  useEffect(() => {
-    setOld(new Date(new Date() - new Date("2000/09/23")).getFullYear() - 1970);
-  }, []);
-
+  const { currentLangObj } = useLanguage();
   return (
     <section id="home" className="hero gradient-blue pt-2">
       <div className="container">
@@ -16,10 +12,7 @@ const Hero = () => {
             <img src={me} alt="me" />
           </div>
           <div className="about">
-            <p>
-              Hi, I'm Hector Muñoz a {old} years old web developer that loves to
-              learn new techonologies and take projects to the next level.
-            </p>
+            <p>{currentLangObj.hero.presentation}</p>
             <div className="social-media">
               <a href="#" className="btn-github">
                 <i className="fab fa-github fa-3x"></i>
@@ -34,7 +27,7 @@ const Hero = () => {
           <button>
             <i className="fas fa-arrow-down fa-2x"></i>
           </button>
-          <h2>Scroll down to discover much more</h2>
+          <h2>{currentLangObj.hero.advise}</h2>
           <button>
             <i className="fas fa-arrow-down fa-2x"></i>
           </button>

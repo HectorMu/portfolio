@@ -55,6 +55,7 @@
   transition: all 0.5s ease-in;
 }
 .toggle-sidebar {
+  display: none;
   background-color: transparent;
   padding: 10px;
   color: white;
@@ -63,4 +64,42 @@
 
 .toggle-sidebar:focus {
   border-radius: 3px solid rgb(12, 12, 12);
+}
+
+.lang {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bolder;
+  cursor: pointer;
+  background-color: rgb(71, 71, 71);
+  color: white;
+  transition: all linear 0.2s;
+  text-transform: uppercase;
+}
+.lang:hover {
+  transform: scale(1.1);
+  background-color: rgb(117, 117, 117);
+}
+
+@media (max-width: 1200px) {
+  .toggle-sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 996px) {
+  .toggle-sidebar {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .toggle-sidebar {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .toggle-sidebar {
+    display: block;
+  }
 }

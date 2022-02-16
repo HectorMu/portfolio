@@ -1,12 +1,58 @@
 {
   "es": {
     "sidebar": {
-      "link1": "Sobre mi"
+      "link1": "Inicio",
+      "link2": "Habilidades",
+      "link3": "Proyectos",
+      "link4": "Contacto"
+    },
+    "hero": {
+      "presentation": "Soy Hector Muñoz un Desarrollador Web FullStack que ama aprender nuevas tecnologias y llevar proyectos al siguient nivel.",
+      "advise": "Baja para descubrir mas"
+    },
+    "skills": {
+      "header": "Habilidades"
+    },
+    "projects": {
+      "header": "Proyectos"
+    },
+    "contact": {
+      "header": "¡Construyamos cosas increibles!",
+      "form": {
+        "header": "¡Contactame!",
+        "field1": "Tu nombre",
+        "field2": "Correo electrónico",
+        "field3": "Tu mensaje",
+        "button": "Enviar"
+      }
     }
   },
   "en": {
     "sidebar": {
-      "link1": "About me"
+      "link1": "Home",
+      "link2": "Skills",
+      "link3": "Projects",
+      "link4": "Get in touch"
+    },
+    "hero": {
+      "presentation": "I'm Hector Muñoz a FullStack Web Developer that loves to learn new techonologies and take projects to the next level.",
+      "advise": "Scroll down to discover much more"
+    },
+    "skills": {
+      "header": "Skills"
+    },
+    "projects": {
+      "header": "Projects"
+    },
+    "contact": {
+      "header": "Let's build amazing things!",
+      "form": {
+        "header": "Contact me!",
+        "field1": "Your name",
+        "field2": "Your email",
+        "field3": "Your message",
+        "button": "Send"
+      }
     }
   }
 }

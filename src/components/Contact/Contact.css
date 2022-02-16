@@ -1,0 +1,126 @@
+.contact {
+  margin-top: 200px;
+  padding-bottom: 200px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container h1 {
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(165, 165, 165);
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+.contact-form h3 {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.contact-form > .form-control {
+  width: 85%;
+  font-size: 17px;
+  padding: 10px;
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 20px;
+  margin-bottom: 15px;
+  transition: width ease-in-out 0.2s;
+}
+
+.contact-form > .form-control:focus {
+  outline: none;
+  border: transparent;
+  box-shadow: 0 0 10px #719ece;
+  width: 90%;
+}
+
+.contact-form > .form-control-area {
+  width: 85%;
+  padding: 10px;
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
+  border: 1px solid rgb(158, 158, 158);
+  margin-bottom: 15px;
+  border-radius: 20px;
+  transition: width ease-in-out 0.2s;
+}
+
+.contact-form > .form-control-area:focus {
+  outline: none;
+  border: transparent;
+  box-shadow: 0 0 10px #719ece;
+  width: 90%;
+}
+
+.contact-form > button {
+  width: 20%;
+  background-color: rgb(71, 71, 71);
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-form > button:hover {
+  background-color: rgb(117, 117, 117);
+  width: 30%;
+}
+
+.contact-form > button:hover > i {
+  transform: translateX(100%);
+  transition: transform ease-in-out 0.2s;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 996px) {
+  .contact-form > button {
+    width: 30%;
+  }
+  .contact-form > button:hover {
+    background-color: rgb(117, 117, 117);
+    width: 40%;
+  }
+  .contact-form > button:focus {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-form > button {
+    width: 30%;
+  }
+  .contact-form > button:hover {
+    background-color: rgb(117, 117, 117);
+    width: 40%;
+  }
+  .contact-form > button:focus {
+    width: 40%;
+  }
+}
