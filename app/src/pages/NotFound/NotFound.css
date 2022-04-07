@@ -1,0 +1,20 @@
+.not__found{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.not__found > h1{
+    font-size: 44px;
+    font-weight: bolder;
+}
+.not__found > p{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+
+

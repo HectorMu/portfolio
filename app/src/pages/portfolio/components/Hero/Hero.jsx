@@ -1,6 +1,6 @@
 import React from "react";
 import me from "../../assets/mifoto.jfif";
-import useLanguage from "../../hooks/useLanguage";
+import useLanguage from "../../../../hooks/useLanguage";
 import "./hero.css";
 const Hero = () => {
   const { currentLangObj } = useLanguage();

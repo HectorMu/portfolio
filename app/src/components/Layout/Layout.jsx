@@ -1,8 +1,18 @@
 import React from "react";
 import "./Layout.css";
+import Sidebar from "../Sidebar/Sidebar";
+import Navbar from "../Navbar/Navbar";
 
 const Layout = ({ children }) => {
-  return <div className={`content `}>{children}</div>;
+  return (
+    <>
+      <Navbar />
+      <div className={`wrapper `}>
+        <Sidebar />
+        <div className="content">{children}</div>
+      </div>
+    </>
+  );
 };
 
 export default Layout;

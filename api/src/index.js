@@ -4,6 +4,7 @@ const cors = require("cors");
 const morgan = require("morgan");
 const path = require("path");
 const app = express();
+const helpers = require("./helpers/helpers");
 
 //Initialazing database connection
 const initDatabase = require("./database");
@@ -13,6 +14,8 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+helpers.createFirstAccount();
 
 //Using the routes
 app.use(require("./routes/template.routes"));

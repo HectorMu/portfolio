@@ -1,7 +1,7 @@
 import React from "react";
-import useLanguage from "../../hooks/useLanguage";
-import useServiceFetch from "../../hooks/useServiceFetch";
-import { getProjects } from "../../services/projects";
+import useLanguage from "../../../../hooks/useLanguage";
+import useServiceFetch from "../../../../hooks/useServiceFetch";
+import { getProjects } from "../../../../services/projects";
 import Card from "./Card";
 import "./Projects.css";
 

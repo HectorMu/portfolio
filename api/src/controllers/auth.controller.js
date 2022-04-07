@@ -32,8 +32,6 @@ controller.Login = async (req, res) => {
     const serializedUser = {
       id: user.id,
       username: user.username,
-      firstname: user.firstname,
-      lastname: user.lastname,
       email: user.email,
     };
 

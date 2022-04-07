@@ -1,7 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "workspaces":["app","api"],
+  "workspaces": [
+    "app",
+    "api"
+  ],
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -22,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/HectorMu/portfolio/issues"
   },
-  "homepage": "https://github.com/HectorMu/portfolio#readme"
+  "homepage": "https://github.com/HectorMu/portfolio#readme",
+  "dependencies": {
+    "multer": "^1.4.4"
+  }
 }
