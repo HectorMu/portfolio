@@ -27,15 +27,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <footer className="hero-footer py-2">
-          <button>
-            <i className="fas fa-arrow-down fa-2x"></i>
-          </button>
-          <h2>{currentLangObj.hero.advise}</h2>
-          <button>
-            <i className="fas fa-arrow-down fa-2x"></i>
-          </button>
-        </footer>
       </div>
     </section>
   );

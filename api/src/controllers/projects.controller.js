@@ -11,8 +11,15 @@ controller.ListAll = async (req, res) => {
   }
 };
 controller.Save = async (req, res) => {
+  const newProject = {
+    ...req.body,
+  };
+
+  delete newProject.photo;
+  console.log(req.files);
+
   try {
-    await connection.query("insert into projects set ?", [req.body]);
+    await connection.query("insert into projects set ?", [newProject]);
     res.json({ status: true, statusText: "Data inserted" });
   } catch (error) {
     console.log(error);

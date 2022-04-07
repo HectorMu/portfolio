@@ -1,3 +1,5 @@
+const helpers = {};
+
 helpers.postConfig = (data) => {
   return {
     method: "POST",

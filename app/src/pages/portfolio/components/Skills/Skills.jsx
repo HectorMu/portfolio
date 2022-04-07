@@ -5,7 +5,7 @@ import "./skills.css";
 const Skills = () => {
   const { currentLangObj } = useLanguage();
   return (
-    <div id="skills" className="skills">
+    <div id="skills" className="skills mt-5">
       <div className="skills-header mt-1">
         <h1>{currentLangObj.skills.header}</h1>
       </div>

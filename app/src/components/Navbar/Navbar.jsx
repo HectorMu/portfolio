@@ -1,12 +1,20 @@
 import React from "react";
 import useSidebarControl from "../../hooks/useSidebarControl";
 import useLanguage from "../../hooks/useLanguage";
+import { Logout } from "../../pages/Login/services/auth";
+import useSession from "../../hooks/useSession";
 
 import "./navbar.css";
 const Navbar = () => {
   const { setIsActive, isActive } = useSidebarControl();
+  const { user, setUser } = useSession();
 
   const { lang, setLang } = useLanguage();
+
+  const handleLogout = () => {
+    Logout();
+    setUser(null);
+  };
 
   const toggleSidebarHandler = () => {
     setIsActive(!isActive);
@@ -32,6 +40,12 @@ const Navbar = () => {
         <button onClick={toggleLanguage} className="lang">
           {lang}
         </button>
+        {user !== null && (
+          <button onClick={handleLogout} className="lang">
+            Logout
+          </button>
+        )}
+
         <button onClick={toggleSidebarHandler} className={`toggle-sidebar`}>
           <i className="fas fa-bars "></i>
         </button>

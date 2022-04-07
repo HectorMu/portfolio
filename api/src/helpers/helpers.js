@@ -1,5 +1,7 @@
 const bcrypt = require("bcryptjs");
 const conn = require("../database");
+const multer = require("multer");
+const path = require("path");
 
 const helpers = {};
 
@@ -36,4 +38,27 @@ helpers.createFirstAccount = async () => {
   }
 };
 
+helpers.multerStorageConfig = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "./src/public/images/");
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  },
+});
+
+helpers.checkFileType = (file, cb) => {
+  // Allowed ext
+  const filetypes = /jpeg|jpg|png|gif/;
+  // Check ext
+  const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
+  // Check mime
+  const mimetype = filetypes.test(file.mimetype);
+
+  if (mimetype && extname) {
+    return cb(null, true);
+  } else {
+    return cb(new Error("Error: PDFS Only!"));
+  }
+};
 module.exports = helpers;
